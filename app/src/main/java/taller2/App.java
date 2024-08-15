@@ -31,16 +31,10 @@ public class App {
         System.out.println(Calcular_perimetro_cuadrado(5));
         System.out.println(Calcular_volumen_cilindro(5, 10));
         System.out.println(Calcular_area_circulo(5));
-
-
-    
         } 
-        
-        catch (Exception e) {
+      catch (Exception e) {
             System.out.println(e);
         }
-
-
     }
 
 
@@ -224,7 +218,6 @@ public static int Calcular_saldo(int base_dinero, int total_recaudos, int total_
      * Si hay algún error, retorne -1.
      */
      public static float Calcular_salario(int horas_normales, int horas_extras_diurnas, int horas_extras_nocturnas,float valor_hora_normal) {
-
         try {
             float salario_horas_normales = 0;
             float salario_horas_extras_diurnas = 0;
@@ -245,8 +238,6 @@ public static int Calcular_saldo(int base_dinero, int total_recaudos, int total_
         } catch (Exception e) {
             return -1;
         }
-}
-
 
     /*
      * 7. Diseñe un algoritmo e implemente la función Calcular_area_triangulo
@@ -352,8 +343,6 @@ public static int Calcular_saldo(int base_dinero, int total_recaudos, int total_
 
 
     }
-
-
 
 
 }
