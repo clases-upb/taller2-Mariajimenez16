@@ -179,11 +179,11 @@ public static int Calcular_saldo(int base_dinero, int total_recaudos, int total_
      * está mal con los porcentajes o con las notas, retorne -1.
      */
         public static float Calcular_para_ganar(float P1, float P2, float P3, float P4, float P5, float N1,float N2, float N3, float N4) {
+        try {
         float suma_porcentajes = P1 + P2 + P3 + P4 + P5;
         float puntaje_actual = (N1 * P1) + (N2 * P2) + (N3 * P3) + (N4 * P4);
         float nota_necesaria = 0;
-        try {
-
+            
         if (P1 < 0 || P1 > 1 || P2 < 0 || P2 > 1 || P3 < 0 || P3 > 1 || P4 < 0 || P4 > 1 || P5 < 0 || P5 > 1) {
             return -1;
         }
@@ -208,8 +208,6 @@ public static int Calcular_saldo(int base_dinero, int total_recaudos, int total_
         return -1;
     }
 }
-
-
 
     /*
      * 6. Diseñe un algoritmo e implemente la función Calcular_salario que
@@ -274,9 +272,6 @@ public static int Calcular_saldo(int base_dinero, int total_recaudos, int total_
             return -1;
         }
     }
-
-
-
     /*
      * 8. Diseñe un algoritmo e implemente la función Calcular_perimetro_cuadrado
      * que reciba un float representando el lado de un cuadrado, y devuelva un
@@ -327,8 +322,6 @@ public static int Calcular_saldo(int base_dinero, int total_recaudos, int total_
         return -1;
         }
     }
-
-
 
     /*
      * 10. Diseñe un algoritmo e implemente la función Calcular_area_circulo
